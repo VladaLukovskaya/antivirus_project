@@ -54,7 +54,7 @@ def insert_new_record(name, address):
 
 
 def new_record():
-    
+    pass
 
 # insert_new_record('terrifying.site', '10.0.0.1')
 

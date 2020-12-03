@@ -1,12 +1,18 @@
 import json
+import sys
+from sniffing import sniffing_from_file, capturing_to_file
 import os
 
-# cmd = 'sudo apt install nftables'  - ???
+path_to_dir = sys.path[0]
+
+# sniffing_from_file(path_to_dir + '/my_cap.cap')
+# capturing_to_file(path_to_dir + '/my_cap.cap')
 
 # cmd = 'sudo apt install tshark'
 # os.system(cmd)
 
 # here we need to call firewall functions
+
 
 # to save iptables state
 # cmd = 'sudo /sbin/iptables-save'
