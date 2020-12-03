@@ -5,3 +5,5 @@ NetfilterQueue==0.8.1
 py==1.9.0
 pyshark==0.4.2.11
 python-iptables==1.0.0
+requests==2.25.0
+netifaces==0.10.9
