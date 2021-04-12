@@ -9,7 +9,7 @@ report_url = 'https://www.virustotal.com/vtapi/v2/file/report'
 
 # this function takes the path to the file and then asks VirusTotal to scan it
 def scanning(path_to_file):
-    params = dict(apikey='a8f5b80d6293c4f3f7552aad48c9a2441c2207699305631fd6548ead3e32f22d')
+    params = dict(apikey='your_key')
     path_to_file = path_to_file.split('/')
     scan_file = path_to_file[-1]
     files = {'file': (scan_file, open(scan_file, 'rb'))}
@@ -22,7 +22,7 @@ def scanning(path_to_file):
 
 # this function takes report
 def report_info(resource):
-    params = dict(apikey='a8f5b80d6293c4f3f7552aad48c9a2441c2207699305631fd6548ead3e32f22d', resource=resource)
+    params = dict(apikey='your_key', resource=resource)
     report = requests.get(report_url, params=params)
     report_result = report.json()
     with open('report.json', 'w') as report_file:
